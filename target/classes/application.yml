@@ -1,0 +1,7 @@
+zfbot:
+  bot-app-id: 102078247
+  bot-token: nJJI6aPIxq4Sn7X5vQjOTzv0Sw9YU5rF
+  bot-secret-key: HSP8dtvnRr2yf7LL
+  dev: false
+  heartbeat: false
+  intents: 1107296256
