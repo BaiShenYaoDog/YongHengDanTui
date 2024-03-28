@@ -1,4 +1,4 @@
-package cn.ChengZhiYa.Bot;
+package cn.ChengZhiYa.Bot.Utils;
 
 import com.alibaba.fastjson2.JSONObject;
 
