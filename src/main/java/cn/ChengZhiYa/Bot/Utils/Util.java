@@ -34,10 +34,12 @@ public final class Util {
         Random random = new Random();
         return StringList.get(random.nextInt(StringList.size()));
     }
+
     public static String getDate() {
         LocalDate Date = LocalDate.now();
         return Date.getYear() + "年" + Date.getMonthValue() + "月" + Date.getDayOfMonth() + "日";
     }
+
     public static String getDay() {
         LocalDate Date = LocalDate.now();
         String Day = "";
@@ -66,6 +68,7 @@ public final class Util {
         }
         return Day;
     }
+
     public static String getTime() {
         LocalDateTime Time = LocalDateTime.now();
         String Hour = String.valueOf(Time.getHour());
@@ -76,9 +79,10 @@ public final class Util {
         if (Minute.length() == 1) {
             Minute = "0" + Minute;
         }
-        return  Hour + ":" + Minute;
+        return Hour + ":" + Minute;
     }
-    public static String getHitokoto(){
+
+    public static String getHitokoto() {
         try {
             URL url = new URL("https://v1.hitokoto.cn/");
             URLConnection conn = url.openConnection();

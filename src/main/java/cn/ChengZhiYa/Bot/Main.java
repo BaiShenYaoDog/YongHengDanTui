@@ -13,6 +13,7 @@ import java.util.TimeZone;
 public class Main {
     public static Statement statement;
     public static HikariDataSource dataSource;
+
     public static void main(String[] args) {
         try {
             HikariConfig config = new HikariConfig();

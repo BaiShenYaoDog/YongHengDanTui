@@ -167,7 +167,7 @@ public final class DatabaseUtil {
             ResultSet rs = ps.executeQuery();
             User User = null;
             if (rs.next()) {
-                User = new User(rs.getString("id"), rs.getString("user_name"), rs.getString("user_password"),rs.getString("last_login_ip"));
+                User = new User(rs.getString("id"), rs.getString("user_name"), rs.getString("user_password"), rs.getString("last_login_ip"));
             }
             rs.close();
             ps.close();

@@ -218,7 +218,7 @@ public final class Listeners {
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "注册成功!"
                             );
-                        }else {
+                        } else {
                             message.setContent(
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "已经在验证服务中了!"
@@ -233,7 +233,7 @@ public final class Listeners {
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "注销成功!"
                             );
-                        }else {
+                        } else {
                             message.setContent(
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "并不在验证服务中!"
@@ -265,14 +265,14 @@ public final class Listeners {
                     if (args[1].equals("授权")) {
                         if (ifUserExists(args[2])) {
                             if (ifPluginExists(args[3])) {
-                                if (!havePlugin(args[2],args[3])) {
+                                if (!havePlugin(args[2], args[3])) {
                                     allowUsePlugin(args[2], args[3]);
 
                                     message.setContent(
                                             "\n=======永恒单推机|插件管理=======\n" +
                                                     "用户" + args[2] + "成功授权使用插件" + args[3] + "!"
                                     );
-                                }else {
+                                } else {
                                     message.setContent(
                                             "\n=======永恒单推机|插件管理=======\n" +
                                                     "用户" + args[2] + "已经被授权使用插件" + args[3] + "了!"
@@ -284,7 +284,7 @@ public final class Listeners {
                                                 "插件" + args[3] + "并不在验证服务中!"
                                 );
                             }
-                        }else {
+                        } else {
                             message.setContent(
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "并不在验证服务中!"
@@ -294,14 +294,14 @@ public final class Listeners {
                     if (args[1].equals("取消授权")) {
                         if (ifUserExists(args[2])) {
                             if (ifPluginExists(args[3])) {
-                                if (!havePlugin(args[2],args[3])) {
+                                if (!havePlugin(args[2], args[3])) {
                                     unAllowUsePlugin(args[2], args[3]);
 
                                     message.setContent(
                                             "\n=======永恒单推机|插件管理=======\n" +
                                                     "用户" + args[2] + "成功取消授权使用插件" + args[3] + "!"
                                     );
-                                }else {
+                                } else {
                                     message.setContent(
                                             "\n=======永恒单推机|插件管理=======\n" +
                                                     "用户" + args[2] + "没有被授权使用插件" + args[3] + "!"
@@ -313,7 +313,7 @@ public final class Listeners {
                                                 "插件" + args[3] + "并不在验证服务中!"
                                 );
                             }
-                        }else {
+                        } else {
                             message.setContent(
                                     "\n=======永恒单推机|插件管理=======\n" +
                                             "用户" + args[2] + "并不在验证服务中!"
